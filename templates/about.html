@@ -1,0 +1,33 @@
+<lx-tabs >
+  <lx-tab heading="Users">
+      <div class="card top-space" >
+          <div flex-container="row">
+            <div class="card__img card__img--left" style="height: 160px;">
+                <img src="imgs/emoji.png"/>
+            </div>
+
+            <div flex-item flex-container="column">
+              <div flex-item class="p+">
+                <strong class="fs-headline tc-teal-800 display-block text-center">Luis F. Peña</strong>
+                <span class="fs-subhead tc-blank-2 display-block text-center">Full Stack Developer.</span>
+              </div>
+              <div flex-item class="p+">
+                <strong class="fs-headline tc-teal-800 display-block">Skills</strong>
+                <ul class="list mt++">
+                  <li class="list-row list-row--has-separator" ng-repeat="skill in skills">
+                    <div class="list-row__content">
+                      <p class="fs-subhead tc-blank-2 display-block">{{skill}}</p>
+                    </div>
+                </ul>
+              </div>
+
+
+              <div class="card__actions">
+                  <a href="https://github.com/luisf11" class="btn btn--m btn--blue-400 btn--flat" lx-ripple>Github</a>
+                  <a ng-click="back()" class="btn btn--m btn--green-400 btn--flat" lx-ripple>Back</a>
+              </div>
+            </div>
+          </div>
+      </div>
+  </lx-tab>
+</lx-tabs>

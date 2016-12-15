@@ -25,6 +25,10 @@ angular.module("App")
       controller: "postByUserCtrl",
       templateUrl: "templates/postByUser.html"
     })
+    .when("/about",{
+            controller:"aboutCtrl",
+            templateUrl: "templates/about.html"
+    })
     .otherwise({
         redirectTo: '/home'
     });
