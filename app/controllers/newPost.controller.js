@@ -1,5 +1,5 @@
 angular.module("App")
-  .controller("postNewController",['$scope','PostService','$location',function(scope,Post,location) {
+  .controller("postNewCtrl",['$scope','PostService','$location',function(scope,Post,location) {
       scope.post = {};
       scope.tittle = "Nuevo Post";
 

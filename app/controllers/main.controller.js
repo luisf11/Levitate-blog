@@ -1,5 +1,5 @@
 angular.module("App")
-  .controller("mainController",['$scope','PostService','UserService',function(scope,Post,User){
+  .controller("mainCtrl",['$scope','PostService','UserService',function(scope,Post,User){
     scope.posts = Post.query();
     scope.users = User.query();
 

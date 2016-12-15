@@ -2,7 +2,7 @@
 <html ng-app="App">
 
 <head>
-	<title>Posts App</title>
+	<title>LEVITATE </title>
 	<base href="/"/>
 	<meta http-equiv="Cache-Control" content="no-store" />
 	<link rel="stylesheet" type="text/css" href="css/materialdesignicons.css">
@@ -22,20 +22,31 @@
 	<script src="app/controllers/main.controller.js" charset="utf-8"></script>
 	<script src="app/controllers/newPost.controller.js" charset="utf-8"></script>
 	<script src="app/controllers/post.controller.js" charset="utf-8"></script>
+	<script src="app/controllers/postByUser.controller.js" charset="utf-8"></script>
 	<script src="app/services/post.service.js" charset="utf-8"></script>
 	<script src="app/services/user.service.js" charset="utf-8"></script>
+	<script src="app/services/comments.service.js" charset="utf-8"></script>
+	<script src="app/services/postByUser.service.js" charset="utf-8"></script>
 
 </head>
 <body>
-	<nav class="bgc-teal-800 tc-white" flex-container="row" flex-align="center center">
+	<nav class="bgc-black tc-white" flex-container="row" flex-align="center center">
 		<div flex-item="4">
-			 <h1 class="fs-display-3 display-block">Blog-app</h1>
+			<img src="imgs/logo-Sm.jpg" >
+
+		</div>
+		<div flex-item="4">
+			 <h1 class="fs-display-3 display-block">LEViTATE</h1>
+		</div>
+
+		<div flex-item="1">
+				<a href="home">Home</a>
 		</div>
 		<div flex-item="1">
-				<a href="home">Inicio</a>
+				<a href="post/new">New Post</a>
 		</div>
 		<div flex-item="1">
-				<a href="post/new">Crear Post</a>
+				<a href="#">About</a>
 		</div>
 	</nav>
 	<div flex-container="row" flex-align="center">

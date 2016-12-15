@@ -2,20 +2,24 @@ angular.module("App")
 .config(['$routeProvider','$locationProvider',function(routeProvider,locationProvider){
   routeProvider
     .when("/home",{
-        controller: "mainController",
+        controller: "mainCtrl",
         templateUrl: "templates/home.html"
     })
     .when("/post/new/",{
-      controller: "postNewController",
+      controller: "postNewCtrl",
       templateUrl: "templates/post_form.html"
     })
     .when("/post/edit/:id",{
-      controller: "postController",
+      controller: "postCtrl",
       templateUrl: "templates/post_form.html"
     })
     .when("/post/:id",{
-      controller: "postController",
+      controller: "postCtrl",
       templateUrl: "templates/post.html"
+    })
+    .when("/user/posts/:id",{
+      controller: "postByUserCtrl",
+      templateUrl: "templates/postByUser.html"
     })
     .otherwise({
         redirectTo: '/home'
