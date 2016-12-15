@@ -1,0 +1,29 @@
+<lx-tabs >
+    <lx-tab heading="{{user.name}}">
+        <div class="card top-space" >
+            <div flex-container="row">
+              <div class="card__img card__img--left" style="height: 350px;">
+                  <img src="imgs/user.jpg"/>
+              </div>
+
+              <div flex-item flex-container="column">
+                <div flex-item class="p+">
+                  <strong class="fs-headline tc-teal-800 display-block"> User name: {{user.username}}</strong>
+                  <span class="fs-subhead tc-blank-2 display-block"> Email:   {{user.email}}</span>
+                    <span class="fs-subhead tc-blank-2 display-block"> Street:   {{user.address.street}} Suite: {{user.address.suite}}</span>
+                  <span class="fs-subhead tc-blank-2 display-block"> City:   {{user.address.city}}</span>
+                  <span class="fs-subhead tc-blank-2 display-block"> Telephone:   {{user.phone}}</span>
+                  <span class="fs-subhead tc-blank-2 display-block"> Company:   {{user.company.name}}</span>
+                    <span class="fs-subhead tc-blank-2 display-block"> *   {{user.company.catchPhrase}}</span>
+                    <span class="fs-subhead tc-blank-2 display-block"> *  {{user.company.bs}}</span>
+                  <span class="fs-subhead tc-blank-2 display-block"> Website:   {{user.website}}</span>
+                </div>
+                <div class="card__actions">
+                    <a ng-click="back()" class="btn btn--m btn--green btn--flat" lx-ripple>Back</a>
+                </div>
+              </div>
+            </div>
+        </div>
+    </lx-tab>
+
+  </lx-tabs>

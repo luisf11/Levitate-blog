@@ -17,6 +17,10 @@ angular.module("App")
       controller: "postCtrl",
       templateUrl: "templates/post.html"
     })
+    .when("/user/contact/:id",{
+      controller: "UserCtrl",
+      templateUrl: "templates/user.html"
+    })
     .when("/user/posts/:id",{
       controller: "postByUserCtrl",
       templateUrl: "templates/postByUser.html"
